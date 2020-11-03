@@ -231,6 +231,11 @@ ul {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
+  background-image: radial-gradient(circle at center, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/Hero-backgrnd.jpg);
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-size: cover, cover;
 }
 
 .hero-text {
@@ -274,6 +279,54 @@ ul {
 
 .feature-item {
   width: calc((100% - 90px) / 4);
+}
+
+.feature-item-1::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 55px;
+  margin-left: 102px;
+  background-image: url(../svg/Sattelite.svg);
+}
+
+.feature-item-2::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 55px;
+  margin-left: 102px;
+  background-image: url(../svg/clock.svg);
+}
+
+.feature-item-3::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 55px;
+  margin-left: 102px;
+  background-image: url(../svg/planning.svg);
+}
+
+.feature-item-4::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 55px;
+  margin-left: 102px;
+  background-image: url(../svg/Spaceman.svg);
 }
 
 .feature-item:nth-child(4n) {
@@ -353,7 +406,6 @@ element .feature-item {
   line-height: 1.17;
   text-align: center;
   color: var(--title);
-  padding-top: 94px;
   padding-bottom: 50px;
 }
 
@@ -371,6 +423,54 @@ element .feature-item {
   color: var(--text);
   padding-top: 10px;
   padding-bottom: 30px;
+}
+
+/* Our Clients */
+
+.our-clients-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title);
+  padding-bottom: 50px;
+}
+
+.our-clients-list li {
+  text-decoration: none;
+  /* list-style: none; */
+}
+
+.our-clients-list {
+  display: flex;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-clients-list-link {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  min-width: 170px;
+  min-height: 90px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: inherit;
+  background-color: tomato;
+  border-radius: 4px;
+  border: 1px solid rgba(175, 177, 184, 1);
+}
+
+.our-clients-list .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Footer */
