@@ -23,8 +23,10 @@
             </ul>
           </nav>
           <ul class="mailtel-nav">
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="tel">+38 096 111 11 11</a></li>
+            <li><a class="mailtel-nav-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li>
+              <a class="tel mailtel-nav-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -99,20 +101,18 @@
       <!-- our team section -->
       <section class="section our-team">
         <h2 class="our-team-title">Наша команда</h2>
-        <ul class="list team-list">
-          <li class="team-list-people">
-            <img src="./img/out_team/igor.jpg" width="270" height="260" alt="фото Игоря Демьяненко" />
-            <h3 class="our-team-name">Игорь Демьяненко</h3>
-            <p lang="en" class="our-team-profession">Product Designer</p>
-            <ul>
-              <li>
-                <a href="">Inst</a>
-                <a href="">Twit</a>
-                <a href="">FB</a>
-                <a href="">In</a>
-              </li>
-            </ul>
-          </li>
+          <ul class="list team-list">
+            <li class="team-list-people">
+              <img src="./img/out_team/igor.jpg" width="270" height="260" alt="фото Игоря Демьяненко" />
+                <h3 class="our-team-name">Игорь Демьяненко</h3>
+                  <p lang="en" class="our-team-profession">Product Designer</p>
+                    <ul class="social-links list">
+                      <li class="social-links-item"><a class="social-links-link" href=""><svg class="social-links-icon"><use href="./svg/sprite.svg#instagram"></use></svg></a></li>
+                      <li class="social-links-item"><a class="social-links-link" href=""><svg class="social-links-icon"><use href="./svg/sprite.svg#twitter"></use></svg></a></li>
+                      <li class="social-links-item"><a class="social-links-link" href=""><svg class="social-links-icon"><use href="./svg/sprite.svg#facebook"></use></svg></a></li>
+                      <li class="social-links-item"><a class="social-links-link" href=""><svg class="social-links-icon"><use href="./svg/sprite.svg#linkedin"></use></svg></a></li>
+                    </ul>
+            </li>
           <li class="team-list-people">
             <img src="./img/out_team/olga.jpg" width="270" height="260" alt="фото Ольги Репиной" />
             <h3 class="our-team-name">Ольга Репина</h3>
@@ -134,12 +134,12 @@
         <h2 class="our-clients-title">Постоянные клиенты</h2>
         <div class="container">
           <ul class="list our-clients-list">
-            <li class="item"><a href="" class="our-clients-list-link">1</a></li>
-            <li class="item"><a href="" class="our-clients-list-link">2</a></li>
-            <li class="item"><a href="" class="our-clients-list-link">3</a></li>
-            <li class="item"><a href="" class="our-clients-list-link">4</a></li>
-            <li class="item"><a href="" class="our-clients-list-link">5</a></li>
-            <li class="item"><a href="" class="our-clients-list-link">6</a></li>
+            <li class="our-clients-list-item"><a class="our-clients-list-link" href=""><svg class="our-clients-list-icon"><use href="./svg/sprite.svg#logo-1"></use></svg></a></li>
+            <li class="our-clients-list-item"><a class="our-clients-list-link" href=""></a></li>
+            <li class="our-clients-list-item"><a class="our-clients-list-link" href=""></a></li>
+            <li class="our-clients-list-item"><a class="our-clients-list-link" href=""></a></li>
+            <li class="our-clients-list-item"><a class="our-clients-list-link" href=""></a></li>
+            <li class="our-clients-list-item"><a class="our-clients-list-link" href=""></a></li>
           </ul>
         </div>
       </section>

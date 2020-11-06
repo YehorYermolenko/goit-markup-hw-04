@@ -112,6 +112,7 @@ h6 {
   --logo-header: #000000;
   --title: #212121;
   --hero-bckgr: #2f303a;
+  --icon-color: #afb1b8;
 }
 
 /* Body Header Footer */
@@ -204,6 +205,28 @@ ul {
 
 .mailtel-nav .tel {
   padding-left: 50px;
+}
+
+.mailtel-nav-mail::before {
+  content: "";
+  display: inherit;
+  width: 16px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+  background-image: url(../svg/mail-icon.svg);
+}
+
+.mailtel-nav-tel::before {
+  content: "";
+  display: inherit;
+  width: 10px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+  background-image: url(../svg/tel-icon.svg);
 }
 
 .logo-web {
@@ -422,7 +445,56 @@ element .feature-item {
   line-height: 1.19;
   color: var(--text);
   padding-top: 10px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
+}
+
+/* Social Links Card */
+
+.social-links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  max-width: 100%;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  outline: 1px solid tomato;
+}
+
+.social-links-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  color: var(--icon-color);
+  background-color: var(--white);
+}
+
+.social-links-item {
+  display: block;
+  background-color: white;
+}
+
+.social-links-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-links-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color);
+}
+
+.social-links-link:hover,
+.social-links-link:focus {
+  background-color: var(--logo-web);
+}
+
+.social-links-icon:hover,
+.social-links-icon:focus {
+  fill: var(--white);
 }
 
 /* Our Clients */
@@ -437,39 +509,33 @@ element .feature-item {
   padding-bottom: 50px;
 }
 
-.our-clients-list li {
-  text-decoration: none;
-  /* list-style: none; */
-}
-
 .our-clients-list {
   display: flex;
-  margin-bottom: 0px;
-  margin-left: auto;
-  margin-right: auto;
   align-items: center;
   justify-content: center;
 }
 
-.our-clients-list-link {
+.our-clients-list-item {
   display: flex;
+  width: 170px;
+  background-color: tomato;
+  border-radius: 4px;
+  border: 1px solid var(--icon-color);
+}
+
+.our-clients-list-link {
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-  min-width: 170px;
-  min-height: 90px;
   font-size: 32px;
   font-weight: 500;
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
   color: inherit;
-  background-color: tomato;
-  border-radius: 4px;
-  border: 1px solid rgba(175, 177, 184, 1);
 }
 
-.our-clients-list .item:not(:last-child) {
+.our-clients-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
