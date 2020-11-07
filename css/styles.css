@@ -113,6 +113,7 @@ h6 {
   --title: #212121;
   --hero-bckgr: #2f303a;
   --icon-color: #afb1b8;
+  --feature-item-svg-bckgrnd: #f5f4fa;
 }
 
 /* Body Header Footer */
@@ -142,6 +143,7 @@ footer * {
 header ul a:hover,
 header ul a:focus {
   color: var(--logo-web);
+  fill: var(--logo-web);
 }
 
 .page-header {
@@ -207,26 +209,22 @@ ul {
   padding-left: 50px;
 }
 
-.mailtel-nav-mail::before {
-  content: "";
+.mailtel-nav-mail-icon {
   display: inherit;
   width: 16px;
   height: 12px;
-  background-repeat: no-repeat;
-  background-position: center;
   margin-right: 10px;
-  background-image: url(../svg/mail-icon.svg);
+  align-items: center;
+  justify-content: center;
 }
 
-.mailtel-nav-tel::before {
-  content: "";
+.mailtel-nav-tel-icon {
   display: inherit;
   width: 10px;
   height: 16px;
-  background-repeat: no-repeat;
-  background-position: center;
   margin-right: 10px;
-  background-image: url(../svg/tel-icon.svg);
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-web {
@@ -457,7 +455,6 @@ element .feature-item {
   max-width: 100%;
   margin-top: 16px;
   margin-bottom: 30px;
-  outline: 1px solid tomato;
 }
 
 .social-links-link {
@@ -468,7 +465,6 @@ element .feature-item {
   justify-content: center;
   border-radius: 50%;
   border: 1px solid transparent;
-  color: var(--icon-color);
   background-color: var(--white);
 }
 
@@ -487,14 +483,15 @@ element .feature-item {
   fill: var(--icon-color);
 }
 
+.social-links-link:hover .social-links-icon,
+.social-links-link:focus .social-links-icon {
+  background-color: var(--logo-web);
+  fill: var(--white);
+}
+
 .social-links-link:hover,
 .social-links-link:focus {
   background-color: var(--logo-web);
-}
-
-.social-links-icon:hover,
-.social-links-icon:focus {
-  fill: var(--white);
 }
 
 /* Our Clients */
@@ -517,26 +514,34 @@ element .feature-item {
 
 .our-clients-list-item {
   display: flex;
+}
+
+.our-clients-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
-  background-color: tomato;
+  height: 90px;
   border-radius: 4px;
   border: 1px solid var(--icon-color);
 }
 
-.our-clients-list-link {
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 1.625;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: inherit;
+.our-clients-list-icon {
+  fill: var(--icon-color);
 }
 
 .our-clients-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.our-clients-list-link:hover,
+.our-clients-list-link:focus {
+  border-color: var(--logo-web);
+}
+
+.our-clients-list-link:hover .our-clients-list-icon,
+.our-clients-list-link:focus .our-clients-list-icon {
+  fill: var(--logo-web);
 }
 
 /* Footer */
