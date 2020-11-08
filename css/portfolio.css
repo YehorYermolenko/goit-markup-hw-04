@@ -144,6 +144,24 @@ header ul a:focus {
   fill: var(--logo-web);
 }
 
+.mailtel-nav-mail-icon {
+  display: inherit;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mailtel-nav-tel-icon {
+  display: inherit;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
 .page-header {
   margin-top: 24px;
   padding-bottom: 24px;
@@ -203,24 +221,6 @@ ul {
 
 .mailtel-nav .tel {
   padding-left: 50px;
-}
-
-.mailtel-nav-mail-icon {
-  display: inherit;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  align-items: center;
-  justify-content: center;
-}
-
-.mailtel-nav-tel-icon {
-  display: inherit;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  align-items: center;
-  justify-content: center;
 }
 
 .logo-web {
@@ -320,11 +320,6 @@ ul {
 .examples {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .examples-item {
