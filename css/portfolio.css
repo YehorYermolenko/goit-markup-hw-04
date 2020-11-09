@@ -323,10 +323,12 @@ ul {
 }
 
 .examples-item {
+  display: block;
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
+  text-decoration: none;
 }
 
 .examples-item:nth-child(3n) {
