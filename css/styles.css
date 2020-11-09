@@ -146,67 +146,22 @@ header ul a:focus {
   fill: var(--logo-web);
 }
 
-.page-header {
-  margin-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #ececec;
+.active-page {
+  position: relative;
+  padding-bottom: 0;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.container {
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+.active-page::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--logo-web);
+  position: absolute;
   margin-left: auto;
   margin-right: auto;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-ul {
-  padding-left: 0;
-}
-
-.header-container {
-  display: block;
-}
-
-.header-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav {
-  margin-left: 93px;
-  align-items: center;
-}
-
-.site-nav > .item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.site-nav a {
-  color: var(--logo-header);
-}
-
-.mailtel-nav {
-  color: var(--text);
-  margin-left: auto;
-}
-
-.mailtel-nav .tel {
-  padding-left: 50px;
+  bottom: 0px;
 }
 
 .mailtel-nav-mail-icon {
@@ -227,6 +182,77 @@ ul {
   justify-content: center;
 }
 
+.page-header {
+  margin-top: auto;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #ececec;
+}
+
+.section {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header-div {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  margin-left: 93px;
+  align-items: center;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav > .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav a {
+  color: var(--logo-header);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.mailtel-nav {
+  color: var(--text);
+  margin-left: auto;
+}
+
+.mailtel-nav .tel {
+  padding-left: 50px;
+}
+
 .logo-web {
   font-family: Raleway;
   font-weight: bold;
@@ -236,6 +262,8 @@ ul {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
@@ -320,6 +348,7 @@ ul {
 }
 
 .feature-section {
+  padding-top: 94px;
   padding-bottom: 47px;
 }
 
